@@ -1,0 +1,30 @@
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    string s;
+	    cin>>s;
+	    
+	    bool haslower=false; bool hasupper=false; bool hasdigit=false;
+	   for(int i=0;i<s.size();i++) 
+	  {if (islower(s[i]))
+         haslower = true;
+      if (isupper(s[i]))
+         hasupper = true;
+      if (isdigit(s[i]))
+         hasdigit = true;
+	  }
+	  if(haslower&&hasupper&&hasdigit)
+	  {
+	      cout<<"YES"<<"\n";
+	  }
+	  else
+	  {
+	      cout<<"NO"<<"\n";
+	  }
+	}
+	return 0;
+}
